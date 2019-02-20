@@ -12,6 +12,11 @@ $("body").on("click", ".dot .close", function (e) {
 	e.preventDefault();
 	e.stopPropagation();
 
+	$("body").on("click", ".dot a", function (e) {
+		e.stopPropagation();
+	});
+
+
 	const $this_close = $(this);
 	const $this_dot = $this_close.closest(".dot")
 
