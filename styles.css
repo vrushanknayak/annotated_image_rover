@@ -22,7 +22,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 
 p {
@@ -80,6 +80,7 @@ img {
     position: absolute;
     width: 100%;
     padding: 5px;
+    font-family: 'Acme', sans-serif;
 }
 
 .dot .close {
@@ -93,22 +94,30 @@ img {
 .dot .close:after {
     font-family: FontAwesome;
     font-size: 1.5em;
-    content: "\f00d";
+    content: "\f057";
 }
 
 /*****************************
 * Dot customizations go here
 ******************************/
 .dot.grape {
-    background-color: rgba(20, 10, 37, 0.65)
+    background-color: rgba(20, 10, 37, 0.65);
 }
 
 .dot.apple {
-    background-color: rgba(219, 43, 48, 0.65)
+    background-color: rgba(219, 43, 48, 0.65);
 }
 
 .dot.peach {
-    background-color: rgba(241, 157, 148, 0.65)
+    background-color: rgba(241, 157, 148, 0.65);
+}
+
+.dot.mother {
+    background-color: rgba(1, 57, 92, 0.65)
+}
+
+.dot.father {
+    background-color: rgba(188, 217, 123, 0.65);
 }
 
 .dot.bramer {
@@ -129,6 +138,18 @@ img {
     transform: translate(-10%, -30%);
 }
 
+.dot.worker {
+    top: 25%;
+    left: 40%;
+    transform: translate(-40%, -25%);
+}
+
+.dot.job {
+    top: 75%;
+    left: 65%;
+    transform: translate(-65%, -75%);
+}
+
 /*********************************
  * For when .dot has been clicked
 **********************************/
@@ -142,6 +163,11 @@ img {
 
 .dot.active .inner {
     opacity: 1;
+}
+
+.button-holder {
+    padding: 20px;
+    text-align: center;
 }
 
 /*********************************************************************
